@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Carbon Emission Data Viz</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+</head>
+
+<body>
+	<div id="page-container">
+
+		<div class="title">
+			<h3>Carbon Emission Per Search Visualizer</h3>
+		</div>
+		
+
+		<div id="data-viz">
+
+		</div>
+
+		<!-- controls -->
+		<div class="controls">
+
+		<!-- left control -->
+		 <div class="leftControl">
+			<div class="radio-selection">
+				<input type="radio" id="browser" name="selection" value="Browser" />
+				<label for="browser">Browser</label>
+			  
+				<input type="radio" id="ai" name="selection" value="AI" />
+				<label for="ai">AI</label>
+			  
+				<input type="radio" id="video" name="selection" value="Video Streaming" />
+				<label for="video">Video Streaming</label>
+			</div>
+
+
+			<p id="error-message" style="color: red; display: none;">Please choose a search method</p>	
+
+		 </div>
+
+		<!-- center control -->
+		<div class="centerControl">
+
+			<div id="search-bar">
+				<input type="text" class="text-input" id="search-input" placeholder="type here">
+			</div>
+			
+
+		</div>
+		
+
+		<!-- right control -->
+		<div class="rightControl">
+			<div class="search-button">Visualize</div>
+			<div class="clear-button">clear all</div>
+			
+		</div>
+
+	
+		
+
+		</div>
+
+		
+
+	</div>
+	
+
+	<script src="sketch.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

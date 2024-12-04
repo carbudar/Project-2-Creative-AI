@@ -1,0 +1,203 @@
+ body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+#page-container{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #edf4ff
+}
+
+.title{
+   z-index: 10;
+   height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  color:  #4d07a3;;
+
+}
+
+.controls{
+   height: 20vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+}
+.leftControl{
+   height: 20vh;
+   width: 25vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-left: 1vw;
+
+
+}
+
+.centerControl{
+   height: 20vh;
+   width: 80vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.rightControl{
+   height: 100%;
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   padding: 1.5vh;
+   box-sizing: border-box;
+   gap: 1vh;
+   padding-right: 1vw;
+
+}
+
+.clear-button,
+.search-button{
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   border-radius: 10px;
+
+
+ 
+}
+.clear-button{
+   background-color: #4d07a3;
+   color: #5eff00;
+   
+}
+.search-button{
+   background-color: #5eff00;
+   color: #4d07a3;
+}
+
+.radio-selection{
+   color:  #4d07a3;;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+   width: 20px;
+   height: 20px;
+   position: relative;
+   vertical-align: middle;
+}
+
+/* Default state */
+input[type="radio"]::after {
+   content: '';
+   display: block;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: transparent; /* Default color */
+   margin: 4px auto;
+}
+
+/* Checked state */
+input[type="radio"]:checked::after {
+   background-color: #5eff00; /* Set your desired color */
+}
+
+/* Style the label for better usability */
+.radio-selection label {
+   font-size: 14px;
+   cursor: pointer;
+   padding-right: 1vh;
+}
+
+/* Style the search input field */
+.text-input {
+   height: 5vh;
+   width: 60vw;
+   padding: 10px;
+   font-size: 16px;
+   border: 2px solid #4d07a3; /* Default border */
+   border-radius: 5px; /* Rounded corners */
+   outline: none; /* Remove default outline */
+   color: #4d07a3; /* Text color */
+   transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+
+/* Change border color on hover */
+.text-input:hover {
+   border-color: #5eff00; ; /* Green outline when hovered */
+}
+
+/* Change border color on focus (when selected) */
+.text-input:focus {
+   border-color: #5eff00; ; /* Green outline when focused */
+}
+
+/* Optional: Style the placeholder text */
+.text-input::placeholder {
+   color: #927ab0; /* Placeholder color */
+   font-style: italic; /* Make placeholder text italic */
+}
+
+/* 
+ .controls{
+   background-color: aqua;
+   width: 100vw;
+   height: 20vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+ }
+
+.leftControl{
+   background-color: blueviolet;
+   height: 100%;
+   width: 80vw;
+}
+
+#search-bar{
+
+}
+ #search-input{
+   height: 7vh;
+   width: 75vw;
+ }
+ .text-input{
+
+   top:10px;
+    left:10px;
+    z-index: 10;
+ }
+
+ .rightControl{
+   height:100% ;
+   width: 20%;
+   background-color: beige;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .radio-selection{
+   background-color: aquamarine;
+   height: 50%;
+   width: 20vw;
+   justify-content: flex-start;
+ }
+
+ .enter-button{
+   height:40%;
+   width:80%;
+   background-color: brown;
+   
+} */
